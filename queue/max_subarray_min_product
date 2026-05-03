@@ -1,0 +1,61 @@
+package queue
+
+import "fmt"
+
+// LeetCode #1856 (Medium): https://leetcode.com/problems/maximum-subarray-min-product/
+
+func maxSumMinProduct(nums []int) int {
+
+	const mod = 1000000007
+	var res int64 = 0
+
+	n := len(nums)
+	left, right := make([]int, n), make([]int, n)
+	stack := []int{}
+
+	for i := 0; i < n; i++ {
+		for len(stack) > 0 && nums[i] < nums[stack[len(stack)-1]] {
+			stack = stack[:len(stack)-1]
+		}
+		if len(stack) == 0 {
+			left[i] = i + 1
+		} else {
+			left[i] = i - stack[len(stack)-1]
+		}
+		stack = append(stack, i)
+	}
+
+	stack = stack[:0]
+	for i := n - 1; i >= 0; i-- {
+		for len(stack) > 0 && nums[i] <= nums[stack[len(stack)-1]] {
+			stack = stack[:len(stack)-1]
+		}
+
+		if len(stack) == 0 {
+			right[i] = n - i
+		} else {
+			right[i] = stack[len(stack)-1] - i
+		}
+		stack = append(stack, i)
+	}
+
+	prefix := make([]int64, n+1)
+	for i, num := range nums {
+		prefix[i+1] = prefix[i] + int64(num)
+	}
+
+	fmt.Println(left)
+	fmt.Println(right)
+	fmt.Println(prefix)
+
+	for i := 0; i < n; i++ {
+		start := i - left[i] + 1
+		end := i + right[i]
+
+		tmp := (prefix[end] - prefix[start]) * int64(nums[i])
+		if tmp > res {
+			res = tmp
+		}
+	}
+	return int(res % mod)
+}
