@@ -1,6 +1,6 @@
 package stack
 
-// Leetcode 1944: https://leetcode.com/problems/number-of-visible-people-in-a-queue/description/
+// LeetCode #1944 (Hard): https://leetcode.com/problems/number-of-visible-people-in-a-queue/
 
 func canSeePersonsCount(heights []int) []int {
 

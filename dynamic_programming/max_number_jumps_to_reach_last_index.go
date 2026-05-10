@@ -1,6 +1,6 @@
 package dynamicprogramming
 
-// https://leetcode.com/problems/maximum-number-of-jumps-to-reach-the-last-index/description/
+// LeetCode #2770 (Medium): https://leetcode.com/problems/maximum-number-of-jumps-to-reach-the-last-index/
 
 func maximumJumps(nums []int, target int) int {
 

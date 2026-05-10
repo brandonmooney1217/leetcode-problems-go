@@ -1,5 +1,7 @@
 package intervals
 
+// LeetCode #57 (Medium): https://leetcode.com/problems/insert-interval/
+
 func insert(intervals [][]int, newInterval []int) [][]int {
 
 	i := 0

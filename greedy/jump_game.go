@@ -1,6 +1,6 @@
 package greedy
 
-// https://leetcode.com/problems/jump-game/
+// LeetCode #55 (Medium): https://leetcode.com/problems/jump-game/
 
 func canJump(nums []int) bool {
 	furthest := nums[0]

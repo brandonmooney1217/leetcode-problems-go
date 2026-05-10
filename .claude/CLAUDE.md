@@ -65,3 +65,13 @@ That's it. Nothing more.
 
 ### Empty Topics (for future problems)
 backtracking, graphs, hash_table, linked_lists, queue, sorting, strings, trees
+
+## Google Sheets Sync
+
+- A GitHub Actions workflow (`.github/workflows/sync-sheets.yml`) auto-syncs problem metadata to Google Sheets on every push to `main` that modifies `.go` files
+- The sync script (`scripts/sync_sheets.py`) parses the standardized comment header from each solution file
+- **All new solution files MUST include the standard header format** for sync to work:
+  ```
+  // LeetCode #XXX (Easy/Medium/Hard): https://leetcode.com/problems/problem-name/
+  ```
+- Required GitHub repo secrets: `GOOGLE_SHEETS_CREDENTIALS_JSON`, `GOOGLE_SHEET_ID`

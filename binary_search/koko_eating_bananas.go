@@ -1,6 +1,6 @@
 package binarysearch
 
-// https://leetcode.com/problems/koko-eating-bananas/description/
+// LeetCode #875 (Medium): https://leetcode.com/problems/koko-eating-bananas/
 
 func minEatingSpeed(piles []int, h int) int {
 

@@ -34,3 +34,11 @@ Thumbs.db
 bin/
 build/
 dist/
+
+# Google Cloud credentials
+*-sa.json
+credentials*.json
+
+# Python
+__pycache__/
+*.pyc

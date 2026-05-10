@@ -1,6 +1,6 @@
 package sliding_window
 
-// LeetCode #904 (Medium):https://leetcode.com/problems/fruit-into-baskets/
+// LeetCode #904 (Medium): https://leetcode.com/problems/fruit-into-baskets/
 func totalFruit(fruits []int) int {
 	res, left, count := 0, 0, 0
 	seen := make(map[int]int)

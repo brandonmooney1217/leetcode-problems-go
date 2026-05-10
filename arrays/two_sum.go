@@ -1,12 +1,6 @@
 package arrays
 
-/*
-Problem: Two Sum (LeetCode #1)
-Difficulty: Easy
-Link: https://leetcode.com/problems/two-sum/
-
-
-*/
+// LeetCode #1 (Easy): https://leetcode.com/problems/two-sum/
 
 func TwoSum(nums []int, target int) []int {
 
