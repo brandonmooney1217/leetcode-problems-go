@@ -1,6 +1,6 @@
 package sorting
 
-// LeetCode #5 (Medium): https://leetcode.com/problems/3sum/
+// LeetCode #15 (Medium): https://leetcode.com/problems/3sum/
 
 import (
 	"slices" // Required for Go 1.21+
