@@ -32,3 +32,36 @@ func SolutionFunction(...) ... {
 ```
 
 That's it. Nothing more.
+
+## Current Progress
+
+**Total: 10 problems solved** (1 Easy, 8 Medium, 1 Hard)
+
+### Arrays
+- #1 Two Sum (Easy)
+
+### Binary Search
+- #875 Koko Eating Bananas (Medium)
+
+### Dynamic Programming
+- #2770 Maximum Number of Jumps to Reach the Last Index (Medium)
+
+### Greedy
+- #55 Jump Game (Medium)
+
+### Intervals
+- #57 Insert Interval (Medium)
+
+### Math
+- #2447 Number of Subarrays With GCD Equal to K (Medium)
+
+### Sliding Window
+- #904 Fruit Into Baskets (Medium)
+- #1695 Maximum Erasure Value (Medium)
+- #2962 Count Subarrays Where Max Element Appears at Least K Times (Medium)
+
+### Stack
+- #1944 Number of Visible People in a Queue (Hard)
+
+### Empty Topics (for future problems)
+backtracking, graphs, hash_table, linked_lists, queue, sorting, strings, trees
