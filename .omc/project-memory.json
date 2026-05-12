@@ -214,6 +214,18 @@
       "type": "file"
     },
     {
+      "path": "greedy/jump_game.go",
+      "accessCount": 2,
+      "lastAccessed": 1778552617618,
+      "type": "file"
+    },
+    {
+      "path": "greedy/minimum-initial-energy-to-finish-tasks.go",
+      "accessCount": 2,
+      "lastAccessed": 1778552771284,
+      "type": "file"
+    },
+    {
       "path": "sliding_window/maximize-the-confusion-of-an-exam.go",
       "accessCount": 1,
       "lastAccessed": 1778472896099,
@@ -244,9 +256,9 @@
       "type": "file"
     },
     {
-      "path": "greedy/jump_game.go",
+      "path": "scripts/sync_sheets.py",
       "accessCount": 1,
-      "lastAccessed": 1778472912301,
+      "lastAccessed": 1778552678993,
       "type": "file"
     }
   ],
