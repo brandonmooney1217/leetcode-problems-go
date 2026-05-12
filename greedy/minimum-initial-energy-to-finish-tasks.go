@@ -1,6 +1,6 @@
 package greedy
 
-// Leetcode #1665 (Hard): https://leetcode.com/problems/minimum-initial-energy-to-finish-tasks/?envType=daily-question&envId=2026-05-12
+// LeetCode #1665 (Hard): https://leetcode.com/problems/minimum-initial-energy-to-finish-tasks/
 import (
 	"sort"
 )
