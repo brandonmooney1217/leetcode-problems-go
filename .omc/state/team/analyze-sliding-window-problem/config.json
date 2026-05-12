@@ -1,0 +1,247 @@
+{
+  "name": "analyze-sliding-window-problem",
+  "task": "Worker 1: analyze sliding window problems; Worker 2: analyze sliding window problems; Worker 3: analyze sliding window problems",
+  "agent_type": "claude",
+  "worker_launch_mode": "interactive",
+  "policy": {
+    "display_mode": "split_pane",
+    "worker_launch_mode": "interactive",
+    "dispatch_mode": "hook_preferred_with_fallback",
+    "dispatch_ack_timeout_ms": 15000
+  },
+  "governance": {
+    "delegation_only": false,
+    "plan_approval_required": false,
+    "nested_teams_allowed": false,
+    "one_team_per_leader_session": true,
+    "cleanup_requires_all_workers_inactive": true
+  },
+  "worker_count": 3,
+  "max_workers": 20,
+  "workers": [
+    {
+      "name": "worker-1",
+      "index": 1,
+      "role": "claude",
+      "assigned_tasks": [],
+      "working_dir": "/Users/brandonmooney/Downloads/Development_Projects/leetcode",
+      "team_state_root": "/Users/brandonmooney/Downloads/Development_Projects/leetcode/.omc/state/team/analyze-sliding-window-problem",
+      "pane_id": "%70B5809A-4435-431D-9BE1-283788874342",
+      "worker_cli": "claude"
+    },
+    {
+      "name": "worker-2",
+      "index": 2,
+      "role": "claude",
+      "assigned_tasks": [],
+      "working_dir": "/Users/brandonmooney/Downloads/Development_Projects/leetcode",
+      "team_state_root": "/Users/brandonmooney/Downloads/Development_Projects/leetcode/.omc/state/team/analyze-sliding-window-problem",
+      "pane_id": "%47082149-23A2-43F2-989C-961482041ADD",
+      "worker_cli": "claude"
+    },
+    {
+      "name": "worker-3",
+      "index": 3,
+      "role": "claude",
+      "assigned_tasks": [],
+      "working_dir": "/Users/brandonmooney/Downloads/Development_Projects/leetcode",
+      "team_state_root": "/Users/brandonmooney/Downloads/Development_Projects/leetcode/.omc/state/team/analyze-sliding-window-problem",
+      "pane_id": "%B141AC06-AC05-4C75-B35E-0A98CFEF5CB7",
+      "worker_cli": "claude"
+    }
+  ],
+  "created_at": "2026-05-11T04:54:45.147Z",
+  "tmux_session": "#S:0",
+  "tmux_window_owned": true,
+  "next_task_id": 4,
+  "leader_cwd": "/Users/brandonmooney/Downloads/Development_Projects/leetcode",
+  "team_state_root": "/Users/brandonmooney/Downloads/Development_Projects/leetcode/.omc/state/team/analyze-sliding-window-problem",
+  "leader_pane_id": "%A27B74CD-8045-46B6-B4A0-01F1D28BC296",
+  "hud_pane_id": null,
+  "resize_hook_name": null,
+  "resize_hook_target": null,
+  "resolved_routing": {
+    "orchestrator": {
+      "primary": {
+        "provider": "claude",
+        "model": "claude-opus-4-7",
+        "agent": "omc"
+      },
+      "fallback": {
+        "provider": "claude",
+        "model": "claude-opus-4-7",
+        "agent": "omc"
+      }
+    },
+    "planner": {
+      "primary": {
+        "provider": "claude",
+        "model": "claude-opus-4-7",
+        "agent": "planner"
+      },
+      "fallback": {
+        "provider": "claude",
+        "model": "claude-opus-4-7",
+        "agent": "planner"
+      }
+    },
+    "analyst": {
+      "primary": {
+        "provider": "claude",
+        "model": "claude-opus-4-7",
+        "agent": "analyst"
+      },
+      "fallback": {
+        "provider": "claude",
+        "model": "claude-opus-4-7",
+        "agent": "analyst"
+      }
+    },
+    "architect": {
+      "primary": {
+        "provider": "claude",
+        "model": "claude-opus-4-7",
+        "agent": "architect"
+      },
+      "fallback": {
+        "provider": "claude",
+        "model": "claude-opus-4-7",
+        "agent": "architect"
+      }
+    },
+    "executor": {
+      "primary": {
+        "provider": "claude",
+        "model": "claude-sonnet-4-6",
+        "agent": "executor"
+      },
+      "fallback": {
+        "provider": "claude",
+        "model": "claude-sonnet-4-6",
+        "agent": "executor"
+      }
+    },
+    "debugger": {
+      "primary": {
+        "provider": "claude",
+        "model": "claude-sonnet-4-6",
+        "agent": "debugger"
+      },
+      "fallback": {
+        "provider": "claude",
+        "model": "claude-sonnet-4-6",
+        "agent": "debugger"
+      }
+    },
+    "critic": {
+      "primary": {
+        "provider": "claude",
+        "model": "claude-opus-4-7",
+        "agent": "critic"
+      },
+      "fallback": {
+        "provider": "claude",
+        "model": "claude-opus-4-7",
+        "agent": "critic"
+      }
+    },
+    "code-reviewer": {
+      "primary": {
+        "provider": "claude",
+        "model": "claude-opus-4-7",
+        "agent": "codeReviewer"
+      },
+      "fallback": {
+        "provider": "claude",
+        "model": "claude-opus-4-7",
+        "agent": "codeReviewer"
+      }
+    },
+    "security-reviewer": {
+      "primary": {
+        "provider": "claude",
+        "model": "claude-sonnet-4-6",
+        "agent": "securityReviewer"
+      },
+      "fallback": {
+        "provider": "claude",
+        "model": "claude-sonnet-4-6",
+        "agent": "securityReviewer"
+      }
+    },
+    "test-engineer": {
+      "primary": {
+        "provider": "claude",
+        "model": "claude-sonnet-4-6",
+        "agent": "testEngineer"
+      },
+      "fallback": {
+        "provider": "claude",
+        "model": "claude-sonnet-4-6",
+        "agent": "testEngineer"
+      }
+    },
+    "designer": {
+      "primary": {
+        "provider": "claude",
+        "model": "claude-sonnet-4-6",
+        "agent": "designer"
+      },
+      "fallback": {
+        "provider": "claude",
+        "model": "claude-sonnet-4-6",
+        "agent": "designer"
+      }
+    },
+    "writer": {
+      "primary": {
+        "provider": "claude",
+        "model": "claude-haiku-4-5",
+        "agent": "writer"
+      },
+      "fallback": {
+        "provider": "claude",
+        "model": "claude-haiku-4-5",
+        "agent": "writer"
+      }
+    },
+    "code-simplifier": {
+      "primary": {
+        "provider": "claude",
+        "model": "claude-opus-4-7",
+        "agent": "codeSimplifier"
+      },
+      "fallback": {
+        "provider": "claude",
+        "model": "claude-opus-4-7",
+        "agent": "codeSimplifier"
+      }
+    },
+    "explore": {
+      "primary": {
+        "provider": "claude",
+        "model": "claude-haiku-4-5",
+        "agent": "explore"
+      },
+      "fallback": {
+        "provider": "claude",
+        "model": "claude-haiku-4-5",
+        "agent": "explore"
+      }
+    },
+    "document-specialist": {
+      "primary": {
+        "provider": "claude",
+        "model": "claude-sonnet-4-6",
+        "agent": "documentSpecialist"
+      },
+      "fallback": {
+        "provider": "claude",
+        "model": "claude-sonnet-4-6",
+        "agent": "documentSpecialist"
+      }
+    }
+  },
+  "workspace_mode": "single",
+  "worktree_mode": "disabled"
+}

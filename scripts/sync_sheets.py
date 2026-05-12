@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Sync LeetCode solutions metadata from Go source files to Google Sheets.
 
-Appends only NEW problems to the existing sheet. Never modifies or deletes
-existing rows. Matches the existing sheet format:
+Appends NEW problems and updates Solve Date for existing problems.
+Never modifies or deletes other existing data. Matches the existing sheet format:
   Problem Number | Difficulty | Is Competent | Solve Date | Next Solve Date | Topics | Topics 2
 """
 
@@ -131,31 +131,42 @@ def collect_problems(repo_root):
     return problems
 
 
-def get_existing_problem_numbers(worksheet):
-    """Read column A to get all problem numbers already in the sheet."""
+def get_existing_problem_rows(worksheet):
+    """Read column A to get all problem numbers and their row indices."""
     col_a = worksheet.col_values(1)
-    existing = set()
-    for val in col_a[1:]:  # Skip header row
+    existing = {}
+    for i, val in enumerate(col_a[1:], start=2):  # Skip header, rows are 1-indexed
         val = val.strip()
         if val.isdigit():
-            existing.add(int(val))
+            existing[int(val)] = i
     return existing
 
 
 def sync_to_sheet(problems, creds, sheet_id):
-    """Append only new problems to the existing Google Sheet."""
+    """Append new problems and update Solve Date for existing ones."""
     client = gspread.authorize(creds)
     spreadsheet = client.open_by_key(sheet_id)
 
     # Use the first available worksheet (handles renamed/reordered sheets)
     worksheet = spreadsheet.worksheets()[0]
 
-    # Get problem numbers already in the sheet
-    existing_numbers = get_existing_problem_numbers(worksheet)
-    print(f"  {len(existing_numbers)} problems already in sheet")
+    # Get problem numbers already in the sheet (mapped to row index)
+    existing_rows = get_existing_problem_rows(worksheet)
+    print(f"  {len(existing_rows)} problems already in sheet")
+
+    # Update Solve Date (column D) for existing problems
+    updates = []
+    for p in problems:
+        if p["number"] in existing_rows and p["date_solved"]:
+            row = existing_rows[p["number"]]
+            updates.append({"range": f"D{row}", "values": [[p["date_solved"]]]})
+
+    if updates:
+        worksheet.batch_update(updates, value_input_option="USER_ENTERED")
+        print(f"  Updated Solve Date for {len(updates)} existing problems")
 
     # Filter to only new problems
-    new_problems = [p for p in problems if p["number"] not in existing_numbers]
+    new_problems = [p for p in problems if p["number"] not in existing_rows]
 
     if not new_problems:
         print("  No new problems to add")

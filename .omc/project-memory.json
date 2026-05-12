@@ -1,0 +1,254 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1778471560223,
+  "projectRoot": "/Users/brandonmooney/Downloads/Development_Projects/leetcode",
+  "techStack": {
+    "languages": [
+      {
+        "name": "Go",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "go.mod"
+        ]
+      }
+    ],
+    "frameworks": [],
+    "packageManager": "go",
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": null,
+    "scripts": {}
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "scripts"
+    ],
+    "gitBranches": null
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "arrays": {
+      "path": "arrays",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1778471560155,
+      "keyFiles": [
+        "two_sum.go"
+      ]
+    },
+    "backtracking": {
+      "path": "backtracking",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1778471560155,
+      "keyFiles": []
+    },
+    "binary_search": {
+      "path": "binary_search",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1778471560155,
+      "keyFiles": [
+        "koko_eating_bananas.go"
+      ]
+    },
+    "dynamic_programming": {
+      "path": "dynamic_programming",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1778471560155,
+      "keyFiles": [
+        "max_number_jumps_to_reach_last_index.go"
+      ]
+    },
+    "graphs": {
+      "path": "graphs",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1778471560156,
+      "keyFiles": []
+    },
+    "greedy": {
+      "path": "greedy",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1778471560156,
+      "keyFiles": [
+        "jump_game.go"
+      ]
+    },
+    "hash_table": {
+      "path": "hash_table",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1778471560156,
+      "keyFiles": []
+    },
+    "intervals": {
+      "path": "intervals",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1778471560156,
+      "keyFiles": [
+        "insert_interval.go"
+      ]
+    },
+    "linked_lists": {
+      "path": "linked_lists",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1778471560156,
+      "keyFiles": []
+    },
+    "math": {
+      "path": "math",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1778471560156,
+      "keyFiles": [
+        "number_subarrays_with_gcd_equal_to_k.go"
+      ]
+    },
+    "queue": {
+      "path": "queue",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1778471560156,
+      "keyFiles": [
+        "max_subarray_min_product"
+      ]
+    },
+    "scripts": {
+      "path": "scripts",
+      "purpose": "Build/utility scripts",
+      "fileCount": 2,
+      "lastAccessed": 1778471560157,
+      "keyFiles": [
+        "requirements.txt",
+        "sync_sheets.py"
+      ]
+    },
+    "sliding_window": {
+      "path": "sliding_window",
+      "purpose": null,
+      "fileCount": 6,
+      "lastAccessed": 1778471560157,
+      "keyFiles": [
+        "count_subarrays_max_element.go",
+        "fruits_into_basket.go",
+        "longest_repeating_character_replacement",
+        "maximize-the-confusion-of-an-exam.go",
+        "maximum_erasure_value.go"
+      ]
+    },
+    "sorting": {
+      "path": "sorting",
+      "purpose": null,
+      "fileCount": 2,
+      "lastAccessed": 1778471560157,
+      "keyFiles": [
+        "3sum.go",
+        "maximum-matching-of-players-with-trainers.go"
+      ]
+    },
+    "stack": {
+      "path": "stack",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1778471560157,
+      "keyFiles": [
+        "number_visible_people_in_queue.go"
+      ]
+    },
+    "strings": {
+      "path": "strings",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1778471560157,
+      "keyFiles": []
+    },
+    "trees": {
+      "path": "trees",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1778471560157,
+      "keyFiles": []
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "",
+      "accessCount": 9,
+      "lastAccessed": 1778472906280,
+      "type": "directory"
+    },
+    {
+      "path": "sliding_window/maximum_erasure_value.go",
+      "accessCount": 2,
+      "lastAccessed": 1778474610768,
+      "type": "file"
+    },
+    {
+      "path": "sliding_window/count_subarrays_max_element.go",
+      "accessCount": 2,
+      "lastAccessed": 1778474611140,
+      "type": "file"
+    },
+    {
+      "path": "sliding_window/fruits_into_basket.go",
+      "accessCount": 2,
+      "lastAccessed": 1778474613546,
+      "type": "file"
+    },
+    {
+      "path": "sliding_window/maximize-the-confusion-of-an-exam.go",
+      "accessCount": 1,
+      "lastAccessed": 1778472896099,
+      "type": "file"
+    },
+    {
+      "path": "sliding_window/longest_repeating_character_replacement",
+      "accessCount": 1,
+      "lastAccessed": 1778472896553,
+      "type": "file"
+    },
+    {
+      "path": "sliding_window/maximum_erasure_value_test.go",
+      "accessCount": 1,
+      "lastAccessed": 1778472896842,
+      "type": "file"
+    },
+    {
+      "path": "stack/number_visible_people_in_queue.go",
+      "accessCount": 1,
+      "lastAccessed": 1778472902185,
+      "type": "file"
+    },
+    {
+      "path": "dynamic_programming/max_number_jumps_to_reach_last_index.go",
+      "accessCount": 1,
+      "lastAccessed": 1778472903495,
+      "type": "file"
+    },
+    {
+      "path": "greedy/jump_game.go",
+      "accessCount": 1,
+      "lastAccessed": 1778472912301,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}

@@ -1,0 +1,7 @@
+{
+  "tool_name": "mcp__claude-in-chrome__tabs_context_mcp",
+  "tool_input_preview": "{\"createIfEmpty\":true}",
+  "error": "No Chrome extension connected.",
+  "timestamp": "2026-05-11T04:59:47.835Z",
+  "retry_count": 1
+}
