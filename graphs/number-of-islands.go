@@ -1,4 +1,4 @@
-package dfs
+package graphs
 
 // LeetCode #200 (Medium): https://leetcode.com/problems/number-of-islands/description/
 

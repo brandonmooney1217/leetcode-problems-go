@@ -1,4 +1,4 @@
-package dfs
+package graphs
 
 // LeetCode #733 (Easy): https://leetcode.com/problems/flood-fill/
 

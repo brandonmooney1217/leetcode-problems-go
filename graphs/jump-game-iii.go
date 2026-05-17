@@ -1,4 +1,4 @@
-package dfs
+package graphs
 
 // LeetCode #1306 (Medium): https://leetcode.com/problems/jump-game-iii/
 
