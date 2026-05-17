@@ -1,0 +1,7 @@
+{
+  "tool_name": "WebFetch",
+  "tool_input_preview": "{\"url\":\"https://docs.google.com/spreadsheets/d/1h_qULJpYQs2KkuG1Xyma668IXRPib3kaTMQfWIYk3tw/gviz/tq?tqx=out:csv&gid=1690114806\",\"prompt\":\"Return the full CSV content of this spreadsheet exactly as-is,...",
+  "error": "Request failed with status code 401",
+  "timestamp": "2026-05-12T02:51:47.696Z",
+  "retry_count": 1
+}
